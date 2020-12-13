@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+
+  <h2>Chat History</h2>
+  <div id="chat_history"> </div>
+  <div id="writting"> </div>
+
+  <div>
+    <table style="width: 100%;">
+      <tr>
+        <td style="width: 100px;"> <label for="username">Username </label> </td>
+        <td> <input type="text" name="username" id="username" style="width: -webkit-fill-available;"> </td>
+      </tr>
+      <tr>
+        <td style="width: 100px;"> <label>Message </label> </td>
+        <td> <textarea name="message" id="message" rows="5" style="width: -webkit-fill-available;"></textarea> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td> <button id="send">Send</button> </td>
+      </tr>
+      <tr>
+        <td> </td>
+        <td>
+          <p id="error_message" class="error_message" hidden></p>
+          <p id="success_message" class="success_message" hidden></p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script type="text/javascript" src="js/socket.io.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
